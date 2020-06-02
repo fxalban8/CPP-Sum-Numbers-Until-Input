@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 using namespace std;
 
 int sumValues(int x);
@@ -22,4 +23,13 @@ int sumValues(int x){
 	}
 
 	return y;
+}
+
+void controlInput(int& x){
+
+	cin.clear();
+	cin.ignore(numeric_limits<streamsize>::max(),'\n');
+
+	cout<<"Enter a correct value: "<<flush;
+	cin>>x;
 }
