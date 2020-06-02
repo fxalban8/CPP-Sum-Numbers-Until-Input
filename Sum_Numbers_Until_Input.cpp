@@ -11,6 +11,9 @@ int main() {
 	cout<<"Enter the number which will be the last one to add to the sum of all numbers below it: "<<flush;		
 	cin>>n;
 	
+	while(!cin||n<0){
+		controlInput(n);
+	}
 
 	cout<<"The sum of those values is :"<<sumValues(n)<<endl;
 	return 0;
