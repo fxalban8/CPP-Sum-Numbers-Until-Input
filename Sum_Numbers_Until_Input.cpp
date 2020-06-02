@@ -7,13 +7,15 @@ int main() {
 	int n;
 	cout<<"Enter the number which will be the last one to add to the sum of all numbers below it: "<<flush;		
 	cin>>n;
+	
 
+	cout<<"The sum of those values is :"<<sumValues(n)<<endl;
 	return 0;
 }
 
 int sumValues(int x){
-	int y;
-	for(int i=1;i++;i<=x){
+	int y=0;
+	for(int i=1;i<=x;i++){
 		y+=i;
 	}
 
