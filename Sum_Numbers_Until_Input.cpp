@@ -2,6 +2,8 @@
 using namespace std;
 
 int sumValues(int x);
+void controlInput(int& x);
+
 
 int main() {
 	int n;
