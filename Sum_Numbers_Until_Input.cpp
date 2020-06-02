@@ -11,4 +11,11 @@ int main() {
 	return 0;
 }
 
+int sumValues(int x){
+	int y;
+	for(int i=1;i++;i<=x){
+		y+=i;
+	}
 
+	return y;
+}
